@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo=Album</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-item">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <form class="search-container">
+            <input type="search" placeholder="please enter search..." />
+            <button>search</button>
+        </form>
+
+        <section class="sec">
+            <div class="box">
+                <div class="image-wrapper">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="postone" />
+                </div>
+                <div class="person-name">
+                    <h1>Lionel Messi</h1>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image-wrapper">
+                    <img src="https://media.guim.co.uk/65d111ee08979d1ad86d06816b93573b8ed57525/0_88_5440_3263/500.jpg"
+                        alt="postone" />
+                </div>
+                <div class="person-name">
+                    <h1>Karim Benzema</h1>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image-wrapper">
+                    <img src="https://media.guim.co.uk/78eee1b998de665f8694989d25e96980184dfa13/248_110_5107_3064/500.jpg"
+                        alt="postone" />
+                </div>
+                <div class="person-name">
+                    <h1>Robert Lewandowski</h1>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image-wrapper">
+                    <img src="https://media.guim.co.uk/a15637ce2f00ad294ddaa898b5ee83ca8ccbb917/0_61_3753_2252/500.jpg"
+                        alt="postone" />
+                </div>
+                <div class="person-name">
+                    <h1>Sadio Mane</h1>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image-wrapper">
+                    <img src="https://media.guim.co.uk/908af6080d2a35724ed48b2779e7c977d7c52698/0_0_2969_1782/500.jpg"
+                        alt="postone" />
+                </div>
+                <div class="person-name">
+                    <h1>Neymar Jr</h1>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image-wrapper">
+                    <img src="https://media.guim.co.uk/a7fe492befba2227d430d7e660f7f85cd8711845/358_397_6684_4012/500.jpg"
+                        alt="postone" />
+                </div>
+                <div class="person-name">
+                    <h1>Son Heung-Min</h1>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image-wrapper">
+                    <img src="https://media.guim.co.uk/96bfb3553925510a39fc6092b684e90c83d97c02/0_49_3242_1946/500.jpg"
+                        alt="postone" />
+                </div>
+                <div class="person-name">
+                    <h1>Toni Kroos</h1>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image-wrapper">
+                    <img src="https://media.guim.co.uk/5fb8e78649db5986998f33c68d5b37c1c4630023/207_2_4981_2989/500.jpg"
+                        alt="postone" />
+                </div>
+                <div class="person-name">
+                    <h1>Cristiano Ronaldo</h1>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image-wrapper">
+                    <img src="https://media.guim.co.uk/1394e2beac9f610e9ddf687ce7be28da6a355318/0_93_4000_2400/500.jpg"
+                        alt="postone" />
+                </div>
+                <div class="person-name">
+                    <h1>De Jong</h1>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image-wrapper">
+                    <img src="https://media.guim.co.uk/9e527c12326c19ca0b9c77f11e7b1307e80f2a9d/0_0_3100_1860/500.jpg"
+                        alt="postone" />
+                </div>
+                <div class="person-name">
+                    <h1>Victor Osimhen</h1>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image-wrapper">
+                    <img src="https://media.guim.co.uk/d6602c02272c6960cc648b1d3fce59a960cc0106/0_171_4500_2700/500.jpg"
+                        alt="postone" />
+                </div>
+                <div class="person-name">
+                    <h1>Reece James</h1>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image-wrapper">
+                    <img src="https://media.guim.co.uk/ae5b5339f24ab59dd8bfb2fd5ebfd6c4ac7d785d/0_261_5000_3000/500.jpg"
+                        alt="postone" />
+                </div>
+                <div class="person-name">
+                    <h1>Manuel Neuer</h1>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer1">
+        <p>copyright@Ayomike 2023</p>
+
+    </footer>
+
+</body>
+
+</html>
